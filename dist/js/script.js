@@ -20,7 +20,7 @@ hamburger.addEventListener('click', function () {
 })
 
 // Klik di luar Hamburger
-window.addEventListener('click', function() {
+window.addEventListener('click', function(e) {
     if (e.target != hamburger && e.target != navMenu) {
         hamburger.classList.toggle('hamburger-active');
         navMenu.classList.add('hidden');
